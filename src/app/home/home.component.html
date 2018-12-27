@@ -1,0 +1,10 @@
+<p>
+  home works!
+</p>
+
+<ul *ngIf="pokemons">
+  <li *ngFor="let pokemon of pokemons.results">
+    <p>{{pokemon.name}}</p>
+
+  </li>
+</ul>
