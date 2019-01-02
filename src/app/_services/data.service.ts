@@ -8,7 +8,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getPokemons() {
-       return this.http.get('https://pokeapi.co/api/v2/pokemon/')
+  getPokemons(id) {
+    return this.http.get('https://pokeapi.co/api/v2/pokemon/' + id +'/')
   }
 }

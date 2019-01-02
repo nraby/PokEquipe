@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from '../_services/data.service';
+
+
 
 @Component({
   selector: 'app-home',
@@ -7,15 +9,10 @@ import { DataService } from '../data.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  pokemons: Object;
+  pokemons: any = [];
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getPokemons().subscribe(data => {
-      this.pokemons = data
-      console.log(this.pokemons)
-    })
   }
-
 }

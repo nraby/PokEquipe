@@ -9,6 +9,10 @@ import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { KantoPokedexComponent } from './kanto-pokedex/kanto-pokedex.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { ErrorNotFoundComponent } from './error-not-found/error-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { AboutComponent } from './about/about.component';
     NavComponent,
     ContactComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    KantoPokedexComponent,
+    RegisterComponent,
+    LoginComponent,
+    ErrorNotFoundComponent
   ],
   imports: [
     BrowserModule,

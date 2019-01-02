@@ -1,0 +1,7 @@
+<ul *ngIf="pokemons">
+  <ol *ngFor="let pokemon of pokemons">
+    <img src=
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.id}}.png"/>
+    {{pokemon.id}} : {{pokemon.name}}
+  </ol>
+</ul>
