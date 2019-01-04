@@ -4,8 +4,7 @@ const PokemonsController = require('../controller/PokemonsController');
 
 router.get('/', async function(req, res) {
   await res.header('Content-Type', 'application/json');
-  await res.write(JSON.stringify(await (new PokemonsController).
-      getRecentMoviesInTheaters(await formatInterval(req.query.interval))));
+  await res.write(JSON.stringify(await (new PokemonsController)))
   await res.end();
 });
 router.get('/:id', async function(req, res) {

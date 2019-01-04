@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 
 const Login = require('./database/user');
 
-const loginRoutes = require('./routes/user');
-
+const logRoute = require('./routes/user');
+const pokemonsRoute = require('./routes/pokemons')
 
 const app = express();
 
@@ -30,7 +30,7 @@ app.use((req, res, next) => {
    next();
 });
 // authentifications routes
-app.use("/api/user", loginRoutes);
-
+app.use("/api/user", logRoute);
+app.use("/pokemons", pokemonsRoute)
 
 module.exports = app;

@@ -7,6 +7,7 @@ import {forkJoin} from 'rxjs'
   templateUrl: './kanto-pokedex.component.html',
   styleUrls: ['./kanto-pokedex.component.scss']
 })
+
 export class KantoPokedexComponent implements OnInit {
   pokemons: any = [];
 
