@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getPokemons(id) {
-    return this.http.get('https://pokeapi.co/api/v2/pokemon/' + id +'/')
+    return this.http.get('http://localhost:8080/pokemons/'+id)
   }
 }
