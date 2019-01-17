@@ -7,7 +7,7 @@ import { KantoPokedexComponent } from './kanto-pokedex/kanto-pokedex.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorNotFoundComponent } from './error-not-found/error-not-found.component';
-
+import { PokeSearchComponent } from './poke-search/poke-search.component';
 
 
 
@@ -18,7 +18,9 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
   { path: 'kanto-pokedex', component: KantoPokedexComponent},
+  { path: 'search', component: PokeSearchComponent},
   { path: '**', component: ErrorNotFoundComponent}
+  
 ];
 
 @NgModule({

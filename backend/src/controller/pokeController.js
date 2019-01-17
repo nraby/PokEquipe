@@ -12,8 +12,16 @@ module.exports = class pokeController {
             },
         });
         const json = await res.json();
-        console.log(json);
+        //console.log(json);
         return json;
+    }
+
+    async getAllPokemons(){
+        const pokemons = [];
+        for(let i = 1; i < 152; i++){
+            await pokemons.push(await this.getPokemonById(i));
+        }
+        return pokemons;
     }
 
 

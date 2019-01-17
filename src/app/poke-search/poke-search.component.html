@@ -1,0 +1,34 @@
+<label>
+  Name:
+  <input type="text" [formControl]="name">
+</label>
+<p>
+  <button (click)="updateName()">Update Name</button>
+</p>
+
+
+<h1 *ngIf="pokemon">
+  <ol *ngFor="let info of pokemon">
+    {{info.name}} n° {{info.id}}<br>
+    <img src=
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{info.id}}.png"
+    height="200" width="200"
+    />
+    <img src=
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{{info.id}}.png"
+    height="200" width="200"
+    />
+  </ol>
+</h1>
+
+<ul *ngIf="pokemon">
+    <h2>
+        Base Statistics 
+      </h2>
+  <ol *ngFor="let info of pokemon">
+        <ol *ngFor="let stat of info.stats">
+          
+          {{stat.stat.name}}            : {{stat.base_stat}}
+        </ol>
+  </ol>
+</ul>

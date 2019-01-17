@@ -13,6 +13,8 @@ import { KantoPokedexComponent } from './kanto-pokedex/kanto-pokedex.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorNotFoundComponent } from './error-not-found/error-not-found.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PokeSearchComponent } from './poke-search/poke-search.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { ErrorNotFoundComponent } from './error-not-found/error-not-found.compon
     KantoPokedexComponent,
     RegisterComponent,
     LoginComponent,
-    ErrorNotFoundComponent
+    ErrorNotFoundComponent,
+    PokeSearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
